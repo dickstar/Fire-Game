@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ButtonController : MonoBehaviour {
@@ -26,7 +27,9 @@ public class ButtonController : MonoBehaviour {
         build.SetActive(true);
         backbutton.SetActive(true);
         buildbutton.SetActive(false);
-    
+        
+        Debug.Log(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(1);
     }
 
 
