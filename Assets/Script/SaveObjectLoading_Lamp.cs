@@ -38,8 +38,7 @@ public class SaveObjectLoading_Lamp : MonoBehaviour
                 x = result.Get<float>("PositionX");
                 y = result.Get<float>("PositionY");
                 z = result.Get<float>("PositionZ");
-                  
-
+                
             }
         });
 
